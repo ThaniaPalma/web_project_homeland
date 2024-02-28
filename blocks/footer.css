@@ -1,0 +1,13 @@
+.footer {
+  padding: 46px 48px 24px;
+}
+
+.footer__copyright {
+  margin: 0;
+  margin: auto;
+  max-width: 191px;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+  text-align: right;
+}
