@@ -8,5 +8,8 @@
   max-width: 1600px;
   color: #ffffff;
   background-color: #2a2c2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
 }

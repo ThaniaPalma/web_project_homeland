@@ -4,9 +4,10 @@
 
 .place {
   max-width: 984px;
-  display: flex;
-  flex-wrap: wrap;
   margin: auto;
+  display: grid;
+  grid-template-columns: 460px auto;
+  grid-template-rows: 152px 460px 48px;
   row-gap: 48px;
   column-gap: 40px;
   margin-bottom: 80px;
@@ -19,15 +20,10 @@
 
 .place__title {
   margin: 0;
-  max-width: 460px;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
   /* or 106% */
-}
-
-.place__title-L {
-  width: 984px;
 }
 
 .place__website {
@@ -44,10 +40,6 @@
   text-transform: uppercase;
   color: #aaaaaa;
   margin-bottom: 8px;
-}
-
-.place__graphics {
-  max-width: 460px;
 }
 
 .place__image {
