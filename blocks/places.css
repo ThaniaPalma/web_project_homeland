@@ -1,19 +1,24 @@
 .places {
   padding: 46px 148px 46px 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 987px;
 }
 
 .place {
-  max-width: 984px;
   margin: auto;
   display: grid;
   grid-template-columns: 460px auto;
-  grid-template-rows: 152px 460px 48px;
+  grid-template-rows: 152px 460px auto;
   row-gap: 48px;
   column-gap: 40px;
   margin-bottom: 80px;
+  height: 756px;
 }
 
 .place:last-of-type {
+  padding-top: 51px;
   margin: 0;
   margin: auto;
 }
@@ -22,8 +27,11 @@
   margin: 0;
   font-weight: 900;
   font-size: 72px;
-  line-height: 76px;
-  /* or 106% */
+  line-height: 106%;
+}
+
+.place__title-large {
+  width: 584px;
 }
 
 .place__website {
@@ -35,7 +43,7 @@
 
 .place__url-heading {
   font-size: 12px;
-  line-height: 15px;
+  line-height: 125%;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #aaaaaa;
@@ -43,9 +51,9 @@
 }
 
 .place__image {
-  max-width: 460px;
-  max-height: 460px;
-  margin-bottom: 48px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .place__description {
@@ -71,13 +79,91 @@
   height: 48px;
   font-weight: 600;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 122%;
   color: #ffffff;
   border-radius: 4px;
   border: 0;
   background-color: #0278fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .place__button:hover {
   background-color: #0063d2;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .places {
+    padding: 44px 24px 46px;
+    width: 720px;
+  }
+
+  .place {
+    grid-template-columns: 340px auto;
+    grid-template-rows: 67px 340px auto;
+    row-gap: 24px;
+    column-gap: 28px;
+    margin-bottom: 46px;
+    height: 600px;
+  }
+
+  .place:last-of-type {
+    padding-top: 213px;
+  }
+
+  .place__title {
+    font-size: 42px;
+  }
+
+  .place__title-large {
+    width: 340px;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .places {
+    padding: 44px 0px;
+    width: auto;
+  }
+
+  .place {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: nowrap;
+    width: 320px;
+    height: auto;
+    margin-bottom: 32px;
+  }
+
+  .place__title {
+    width: 288px;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .place__website {
+    align-self: center;
+    width: 288px;
+    margin-bottom: 36px;
+  }
+
+  .place__description {
+    max-width: 288px;
+  }
+  .place__button {
+    width: 288px;
+    height: 48px;
+    margin-top: 8px;
+    font-size: 14px;
+  }
 }
