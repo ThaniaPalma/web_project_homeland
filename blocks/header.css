@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding: 34px 148px 46px;
   width: 984px;
 }
@@ -19,7 +19,6 @@
   font-size: 96px;
   line-height: 104%;
   max-width: 793px;
-  margin: auto;
   text-align: center;
 }
 
