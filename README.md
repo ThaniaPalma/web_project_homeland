@@ -5,3 +5,5 @@ Bienvenido a un recorrido por las ciudades de origen de nuestros colaboradores, 
 En el camino usaremos herramientas en HTML y CSS para visualizar de manera armoniosa los elementos de esta galería, como por ejemplo el uso de Flexbox y de Grid layout, también usaremos hoover sobre algunos elementos para dar dinamismo a los mismos.
 
 ¡Buen viaje!
+
+Visita: https://thaniapalma.github.io/web_project_homeland/
